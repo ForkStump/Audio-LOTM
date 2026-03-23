@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+
+    <!-- ===== PODCAST INFO - FILL THESE IN ===== -->
+    <title>LOTM Audiobook</title>
+    <link>https://forkstump.github.io/Audio-LOTM</link>
+    <description>Lord of the Mysteries Audiobook Podcast</description>
+    <language>en-us</language>
+
+    <itunes:author>FORKSTUMP</itunes:author>
+    <itunes:email>sammonsaaron9@gmail.com</itunes:email>
+    <itunes:image href="https://i.imgur.com/ptATqXP.jpeg"/>
+    <!-- Image must be square JPEG/PNG, 1400x1400 to 3000x3000px -->
+
+    <itunes:category text="Books"/>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:type>episodic</itunes:type>
+
+    <!-- ===== EPISODES - ADD NEW ONES AT THE TOP ===== -->
+
+    <item>
+      <title>EP 21 - Lord of the Mysteries Chapter 850-889</title>
+      <description>EP 21 LOTM - Lord of the Mysteries Chapter 850-889 – The Ultimate Audiobook Experience</description>
+      <pubDate>Sun, 23 Mar 2026 04:58:37 GMT</pubDate>
+      <guid isPermaLink="false">LOTM-EP21</guid>
+
+      <enclosure
+        url="https://archive.org/download/LOTM-EP21/Lord%20of%20the%20Mysteries%20Chapter%20850-889%20%E2%80%93%20The%20Ultimate%20Audiobook%20Experience%20%5BOGlP0ccPjTI%5D.mp3"
+        length="408530037"
+        type="audio/mpeg"/>
+
+      <itunes:duration>09:03:55</itunes:duration>
+      <itunes:episode>21</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+
+  </channel>
+</rss>
