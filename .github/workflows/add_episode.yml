@@ -1,0 +1,69 @@
+name: Add Episode to RSS
+
+on:
+  workflow_dispatch:
+    inputs:
+      episode_number:
+        description: 'Episode number (e.g. 22)'
+        required: true
+        type: string
+      chapters:
+        description: 'Chapter range (e.g. 890-930)'
+        required: true
+        type: string
+      mp3_filename:
+        description: 'MP3 filename on archive.org (e.g. LOTM_EP22.mp3)'
+        required: true
+        type: string
+      duration:
+        description: 'Duration (HH:MM:SS)'
+        required: true
+        type: string
+      file_size:
+        description: 'File size in bytes (leave empty to skip)'
+        required: false
+        default: ''
+        type: string
+      identifier:
+        description: 'Archive.org item ID (leave empty for default LOTM-EP{num})'
+        required: false
+        default: ''
+        type: string
+
+jobs:
+  add-episode:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Add episode to RSS feed
+        env:
+          EP_NUM: ${{ inputs.episode_number }}
+          CHAPTERS: ${{ inputs.chapters }}
+          IDENTIFIER: ${{ inputs.identifier }}
+          MP3_FILE: ${{ inputs.mp3_filename }}
+          DURATION: ${{ inputs.duration }}
+          FILE_SIZE: ${{ inputs.file_size }}
+        run: |
+          printf '%s\n' \
+            "$EP_NUM" \
+            "$CHAPTERS" \
+            "$IDENTIFIER" \
+            "$MP3_FILE" \
+            "$DURATION" \
+            "$FILE_SIZE" \
+            "n" \
+          | python3 add_episode.py
+
+      - name: Commit and push
+        env:
+          EP_NUM: ${{ inputs.episode_number }}
+          CHAPTERS: ${{ inputs.chapters }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add rss.xml
+          git diff --cached --quiet || git commit -m "Add EP ${EP_NUM} - Chapters ${CHAPTERS}"
+          git push
