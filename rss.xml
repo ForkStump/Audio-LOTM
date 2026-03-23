@@ -20,22 +20,7 @@
     <itunes:type>episodic</itunes:type>
 
     <!-- ===== EPISODES - ADD NEW ONES AT THE TOP ===== -->
-    <item>
-      <title>EP 20 - Lord of the Mysteries Chapter 794-847</title>
-      <description>EP 20 LOTM - Lord of the Mysteries Chapter 794-847 – The Ultimate Audiobook Experience</description>
-      <pubDate>Mon, 23 Mar 2026 05:58:55 +0000</pubDate>
-      <guid isPermaLink="false">LOTM-EP20</guid>
-
-      <enclosure
-        url="https://archive.org/details/LOTM-EP20"
-        length="536859933"
-        type="audio/mpeg"/>
-
-      <itunes:duration>11:54:57</itunes:duration>
-      <itunes:episode>20</itunes:episode>
-      <itunes:explicit>false</itunes:explicit>
-    </item>
-
+ 
     <item>
       <title>EP 21 - Lord of the Mysteries Chapter 850-889</title>
       <description>EP 21 LOTM - Lord of the Mysteries Chapter 850-889 – The Ultimate Audiobook Experience</description>
