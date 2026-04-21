@@ -21,6 +21,21 @@
 
     <!-- ===== EPISODES - ADD NEW ONES AT THE TOP ===== -->
     <item>
+      <title>EP 23 - Lord of the Mysteries Chapter 935-977</title>
+      <description>EP 23 LOTM - Lord of the Mysteries Chapter 935-977 – The Ultimate Audiobook Experience</description>
+      <pubDate>Tue, 21 Apr 2026 00:28:14 +0000</pubDate>
+      <guid isPermaLink="false">LOTM-EP23</guid>
+
+      <enclosure
+        url="https://archive.org/download/EP 23/Lord%20of%20the%20Mysteries%20Chapter%20935-977%20%E2%80%93%20The%20Ultimate%20Audiobook%20Experience%20%5ButaM2jzkaSA%5D.mp3"
+        length="302370621"
+        type="audio/mpeg"/>
+
+      <itunes:duration>09:17:40</itunes:duration>
+      <itunes:episode>23</itunes:episode>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+    <item>
       <title>EP 22 - Lord of the Mysteries Chapter 890-934</title>
       <description>EP 22 LOTM - Lord of the Mysteries Chapter 890-934 – The Ultimate Audiobook Experience</description>
       <pubDate>Wed, 25 Mar 2026 03:20:39 +0000</pubDate>
